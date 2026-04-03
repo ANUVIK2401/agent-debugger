@@ -1,8 +1,8 @@
-streamlit
-langchain
-langchain-openai
-langchain-core
-openai
-python-dotenv
-requests
-pandas
+streamlit==1.45.*
+langchain==0.3.*
+langchain-openai==0.3.*
+langchain-core==0.3.*
+openai==1.*
+python-dotenv==1.1.*
+requests==2.32.*
+pandas==2.2.*

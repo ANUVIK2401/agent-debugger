@@ -2,6 +2,7 @@ import os
 import re
 import json
 import requests
+import streamlit as st
 from datetime import datetime
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
@@ -14,6 +15,7 @@ def load_env():
     load_dotenv()
 
 
+@st.cache_data(ttl=300)
 def fetch_github_context(repo_url: str, branch: str, traceback_text: str) -> dict:
     """
     Fetch source code context from GitHub based on traceback.
@@ -166,7 +168,8 @@ def analyze_with_langchain(traceback: str, code_context: str,
         previous_patterns = []
 
     try:
-        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+        # max_tokens=1200 — JSON response with diff blocks needs extra room
+        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, max_tokens=1200)
 
         patterns_instruction = ""
         if previous_patterns:
