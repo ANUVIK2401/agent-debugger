@@ -1,9 +1,8 @@
-streamlit==1.32.0
-langchain==0.1.16
-langchain-openai==0.1.8
-langchain-core==0.1.46
-openai==1.30.1
-python-dotenv==1.0.1
-requests==2.31.0
-pygments==2.17.2
-pandas==2.0.3
+streamlit
+langchain
+langchain-openai
+langchain-core
+openai
+python-dotenv
+requests
+pandas
