@@ -13,16 +13,19 @@ An AI-powered debugging assistant that analyzes Python tracebacks, fetches relev
 - **Export Reports** — Download analysis as markdown for documentation or sharing
 - **GitHub Issue Drafts** — Auto-generated issue templates ready to paste
 
-## Screenshots
+## Live Demo
 
-### Live Demo
-**Try it now:** https://agentic-code-debugging.streamlit.app
+**🚀 Try it now:** https://agentic-code-debugging.streamlit.app
 
-![AgentDebugger - Streamlit Cloud](assets/demo-cloud.png)
-*Analyzing an IndexError with 85% confidence - showing root cause, confidence breakdown, suggested fix with diff, and auto-generated GitHub issue*
-
-![AgentDebugger - Local Development](assets/demo-local.png)
-*Running locally on localhost:8501 - full analysis with similar bug patterns and export functionality*
+### Key Features in Action:
+- ✅ **85% confidence** root cause analysis
+- ✅ **3-metric confidence breakdown** (traceback clarity, code quality, fix certainty)
+- ✅ **Suggested fix** with unified diff patch
+- ✅ **Similar bug patterns** detection
+- ✅ **Auto-generated GitHub issue** templates
+- ✅ **Export reports** as markdown
+- ✅ **Batch mode** for multiple errors
+- ✅ **Error intelligence** with frequency tracking
 
 ## Quick Start
 
